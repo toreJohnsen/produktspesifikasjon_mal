@@ -1,0 +1,69 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Trafikkmengde - Filnedlastning - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class Trafikkmengde <<featureType>> {
+    + senterlinje [1] : Kurve
+    + ådtTotal [1] : Real
+    + ådtAndelLangeKjøretøy [1] : Real
+    + årGjelderFor [1] : Real
+    + grunnlagForÅDT [0..1] : GrunnlagForÅDT
+    + ådtStart [0..1] : Real
+    + ådtSlutt [0..1] : Real
+  }
+
+  abstract class Veglenke <<featureType>> {
+    + vegident [1] : Vegident
+  }
+
+  abstract class Fellesegenskaper <<featureType>> {
+    + identifikasjon [1] : Identifikasjon
+    + datauttaksdato [1] : Date
+    + opphav [0..1] : CharacterString
+  }
+
+  class Vegident <<dataType>> {
+    + vegkategori [1] : Vegkategori
+    + vegstatus [1] : VegStatus
+    + vegnummer [1] : Integer
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+    + versjonId [0..1] : CharacterString
+  }
+}
+
+  Veglenke <|-- Trafikkmengde
+  Fellesegenskaper <|-- Veglenke
+
+@enduml
