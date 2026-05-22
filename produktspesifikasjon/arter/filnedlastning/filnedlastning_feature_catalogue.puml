@@ -1,0 +1,96 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Arter av nasjonal forvaltningsinteresse - Filnedlastning - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class BmArt <<featureType>> {
+    + posisjon [0..1] : Punkt
+    + område [0..1] : Flate
+    + bmTakson [1] : BmTakson
+    + funnetAr [0..1] : Integer
+    + funndato [0..1] : Date
+    + funnsted [0..1] : CharacterString
+    + funksjonsperiode [0..1] : BmFunksjonsperiode
+    + okologiskFunksjonsomrade [1] : Boolean
+    + habitat [0..1] : CharacterString
+    + bmAktivitet [0..*] : BmAktivitet
+    + geografiskPresisjon [0..1] : CharacterString
+    + bmFunntype [1..*] : BmFunntype
+    + finner [0..1] : CharacterString
+    + artsbestemtAv [0..1] : CharacterString
+    + bmKjonn [0..1] : CharacterString
+    + artsdatabankID [0..1] : CharacterString
+  }
+
+  class BmArtGrense <<featureType>> {
+    + grense [1] : Kurve
+  }
+
+  abstract class FellesegenskaperBmArtGrense <<featureType>> {
+    + datafangstdato [0..1] : Date
+    + kvalitet [0..1] : Posisjonskvalitet
+  }
+
+  abstract class FellesegenskaperBmArt <<featureType>> {
+    + faktaark [1] : Link
+    + identifikasjon [1] : Identifikasjon
+    + institusjon [1] : Geodataeier
+    + fylke [0..*] : Fylkesnummer
+    + kommune [0..*] : Kommunenummer
+    + samling [0..1] : CharacterString
+    + datasettNavn [0..1] : CharacterString
+  }
+
+  class BmTakson <<dataType>> {
+    + bmGruppe [1] : BmGruppe
+    + bmForvaltningskategori [1] : BmForvaltningskategori
+    + bmUtvalgskriterium [1..*] : BmUtvalgskriterium
+    + taksonID [1] : TaksonID
+    + taksonNorskNavn [0..1] : TaksonNorskNavn
+    + taksonVitNavn [1] : TaksonVitNavn
+  }
+
+  class Posisjonskvalitet <<dataType>> {
+    + målemetode [0..1] : Målemetode
+    + nøyaktighet [0..1] : Integer
+    + synbarhet [0..1] : Synbarhet
+  }
+
+  class Identifikasjon <<dataType>> {
+    + lokalId [1] : CharacterString
+    + navnerom [1] : CharacterString
+  }
+}
+
+  FellesegenskaperBmArt <|-- BmArt
+  BmArt --> BmArtGrense : artsAvgrensning [1]
+  FellesegenskaperBmArtGrense <|-- BmArtGrense
+
+@enduml
