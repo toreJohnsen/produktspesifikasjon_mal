@@ -1,0 +1,250 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "ELVIS elvenett",
+  "format": "text/html",
+  "date": {
+    "creation": "1970-01-01"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "NVE - Seksjon for geomatikk og dataanalyse/IGD",
+    "organizationName": "Norges vassdrags- og energidirektorat",
+    "logo": "https://register.geonorge.no/data/organizations/970205039_NVE_liten.png",
+    "electronicMailAddress": "gisstotte@nve.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "ELVIS elvenett",
+    "abstract": "Elvenettverkdatabase etablert for våre vassdrag (inkl. kystfelt i REGINE). I ELVIS er alle vassdragselement (elv, bekk, vann) omdannet til linjer. Disse er knyttet sammen i et nettverk med definert strømretning. Alle linjesegmentene i ELVIS er tilordnet entydig nasjonalt løpenummer/ID - kalt strekn_lnr",
+    "purpose": {
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "NVE fraskriver seg ansvar for skade som skyldes feil i data og feil bruk av data."
+      }
+    },
+    "topicCategory": [
+      "Miljødata"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "50000"
+    },
+    "uniqueId": "https://data.geonorge.no/sosi/hydrologi/elvis_elvenett",
+    "keyword": [
+      "ELVIS elvenett",
+      "ND_DS",
+      "Norge",
+      "Hydrografi",
+      "Surface water bodies (Water Framework Directive)",
+      "Inspire",
+      "Norge digitalt",
+      "geodataloven",
+      "ØkologiskGrunnkart",
+      "fellesDatakatalog",
+      "Natur"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Ingen begrensninger på bruk er oppgitt."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Norsk lisens for offentlige data (NLOD)",
+        "licenseUrl": "http://data.norge.no/nlod/no/1.0",
+        "otherConstraints": "Ingen begrensninger oppgitt."
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "NVE - Seksjon for geomatikk og dataanalyse/IGD",
+        "organizationName": "Norges vassdrags- og energidirektorat",
+        "electronicMailAddress": "gisstotte@nve.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "NVE - Seksjon for geomatikk og dataanalyse/IGD",
+        "organizationName": "Norges vassdrags- og energidirektorat",
+        "electronicMailAddress": "gisstotte@nve.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "NVE - Seksjon for geomatikk og dataanalyse/IGD",
+        "organizationName": "Norges vassdrags- og energidirektorat",
+        "electronicMailAddress": "gisstotte@nve.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Etter behov",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "1970-01-01",
+          "endPosition": "1970-01-01"
+        }
+      }
+    },
+    "date": {
+      "creation": "1970-01-01",
+      "publication": "1970-01-01"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Filnedlastning",
+        "level": "dataset",
+        "levelDescription": "Arter av nasjonal forvaltningsinteresse består både av arter som trenger beskyttelse og arter som er skadelige (fremmede)"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:4258",
+        "name": "EUREF 89 Geografisk (ETRS 89) 2d"
+      },
+      {
+        "code": "EPSG:3035",
+        "name": "EUREF89 / ETRS89-LAEA Europe"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services",
+        "measureDescription": "Datasettet følger norsk spesifikasjon",
+        "descriptiveResult": "Datasettet følger norsk spesifikasjon"
+      },
+      {
+        "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "63"
+      },
+      {
+        "nameOfMeasure": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 63%"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Etter behov"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Ingen prosseshistorie tilgjenglig."
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "name": "Tegneregler",
+    "linkage": "https://register.geonorge.no/register/versjoner/tegneregler/norges-vassdrags-og-energidirektorat/elvenett"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "fylkesvis, landsfiler, kommunevis",
+          "deliveryMediumName": "Egen nedlastningsside",
+          "deliveryService": {
+            "serviceEndpoint": "http://nedlasting.nve.no/gis",
+            "serviceProperty": {
+              "type": "Egen nedlastningsside",
+              "value": "WWW:DOWNLOAD-1.0-http--download"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "SOSI"
+          },
+          {
+            "formatName": "Shape"
+          },
+          {
+            "formatName": "GML"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Elvenett Elvis WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.nve.no/enterprise/services/Elvenett1/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+            "serviceProperty": {
+              "type": "Elvenett Elvis WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "wms"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2023-11-15",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Norges vassdrags- og energidirektorat",
+      "individualName": "NVE - Seksjon for geomatikk og dataanalyse/IGD",
+      "logo": "https://register.geonorge.no/data/organizations/970205039_NVE_liten.png",
+      "electronicMailAddress": "gisstotte@nve.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "3f95a194-0968-4457-a500-912958de3d39",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/3f95a194-0968-4457-a500-912958de3d39"
+    }
+  }
+}
