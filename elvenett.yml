@@ -1,0 +1,10 @@
+metadataId: 3f95a194-0968-4457-a500-912958de3d39
+output_directory: produktspesifikasjon
+product_slug: elvenett
+updated: 2026-05-22
+
+scopes: 
+  - name: Filnedlastning
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Norges vassdrags- og energidirektorat/Elvenett_1.0.xml
+    generator: xmi
+    description: Arter av nasjonal forvaltningsinteresse består både av arter som trenger beskyttelse og arter som er skadelige (fremmede)

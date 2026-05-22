@@ -1,0 +1,10 @@
+metadataId: 23dfcc33-fb04-4898-aa88-68b49c4bfea7
+output_directory: produktspesifikasjon
+product_slug: fkblufthavn
+updated: 2026-05-22
+
+scopes: 
+  - name: Filnedlastning
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/FKB/FKB-Lufthavn-5.0.2.xml
+    generator: xmi
+    description: FKB-Lufthavn omfatter et begrenset utvalg av objekttyper for lufthavner som skal registreres og forvaltes i FKB

@@ -1,0 +1,10 @@
+metadataId: af2c4a0a-1978-4e62-b08d-ed1f36bd5023
+output_directory: produktspesifikasjon
+product_slug: trafikkmengde
+updated: 2026-05-22
+
+scopes: 
+  - name: Filnedlastning
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens vegvesen/DOK/Trafikkmengde_20170702.xml
+    generator: xmi
+    description: Trafikkanalyser, planlegging av veger og andre trafikksikkerhetstiltak, trafikkstøy m.m.

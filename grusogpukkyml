@@ -1,0 +1,10 @@
+metadataId: a26e57bc-15bd-46db-8504-6c6ed1e7c501
+output_directory: produktspesifikasjon
+product_slug: grusogpukk
+updated: 2026-05-22
+
+scopes: 
+  - name: Filnedlastning
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/NGU/GrusPukk 3.0.xml
+    generator: xmi
+    description: Datasettet gir en oversikt over sand-, grus-, pukk- og steintippforekomster og uttakssteder i Norge som kan utnyttes som råstoff i bygge- og anleggsvirksomhet

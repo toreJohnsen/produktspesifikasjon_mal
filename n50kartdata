@@ -1,0 +1,10 @@
+metadataId: ea192681-d039-42ec-b1bc-f3ce04c189ac
+output_directory: produktspesifikasjon
+product_slug: n50kartdata
+updated: 2026-05-22
+
+scopes: 
+  - name: Filnedlastning
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N50Kartdata20230401.xml
+    generator: xmi
+    description: Dataene egner seg blant annet for fremstilling av topografiske kart, temakart, turkart/fritidskart, interaktive kart, som datagrunnlag for kartløsninger på internett og i analysesammenheng.
